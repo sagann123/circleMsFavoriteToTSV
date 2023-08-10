@@ -1,0 +1,16 @@
+{
+    "name": "Circle.ms Favorite To TSV",
+    "version": "0.1.0",
+    "permissions": [
+    ],
+    "host_permissions": [
+        "https://catalog.circle.ms/"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://catalog.circle.ms/*/Spa*"],
+            "js": ["content_script.js"]
+        }
+    ],
+    "manifest_version": 3
+}
